@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="encriptador.html">Encriptador</a>
+        </nav>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <textarea id="inputText" placeholder="Ingresa tu texto aquí"></textarea>
+        <input type="number" id="shift" placeholder="Desplazamiento" value="3">
+        <button onclick="encryptText()" class="button_encriptar">Encriptar</button>
+        <button onclick="decryptText()" class="button_desencriptar">Desencriptar</button>
+        <h2>Resultado:</h2>
+        <textarea id="outputText" readonly></textarea>
+    </div>
+    <script src="./javascript/script.js"></script>
+   
+</body>
+<footer class="footer">
+    <p>Desarrollado por DAVID GODOY</p>
+</footer>
+</html>
